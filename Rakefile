@@ -1,7 +1,5 @@
-task :environment do
-  require './config/environment'
-end
+require './config/environment'
 
-task :console => :environment do
+task :console do
   Pry.start
 end
